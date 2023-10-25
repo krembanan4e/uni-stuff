@@ -1,2 +1,2 @@
-# FINKI-
-Zadachi
+# Zadachi-
+1 kolokvium
