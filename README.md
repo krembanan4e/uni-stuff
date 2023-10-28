@@ -1,2 +1,4 @@
 # FINKI - Zadachi
-***Решени лабораториски и аудиториски задачи по [Структурно програмирање](https://github.com/krembanan4e/FINKI-/tree/main/SP) во C++***
+***1 година***
+**Решени [лабораториски](https://github.com/krembanan4e/FINKI-/tree/main/SP/labs) задачи по Структурно програмирање во C++**
+
