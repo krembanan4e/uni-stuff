@@ -1,2 +1,2 @@
 # FINKI - Zadachi
-***Resheni laboratoriski i auditoriski zadachi po SP vo C++***
+***Решени лабораториски и аудиториски задачи по [Структурно програмирање](https://github.com/krembanan4e/FINKI-/tree/main/SP) во C++***
