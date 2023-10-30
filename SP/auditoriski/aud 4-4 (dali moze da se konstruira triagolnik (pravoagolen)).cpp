@@ -30,7 +30,7 @@ int main() {
         } //po ova najdolgata strana ke bide vo c
 
         if ( c * c == ( a * a ) + ( b * b ) ){
-            cout <<"Pravoagolen e." << endl;
+            cout <<"Pravoagolen e i ploshtinata mu e: " << a * b / 2 << endl;
         }
         else{
             cout <<"Ne e pravoagolen." << endl;
