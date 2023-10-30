@@ -14,6 +14,7 @@ int main() {
     cout << "Vnesi broj" << endl; cin >> br2;
     switch (operacija){
         case '+': cout << br1 << " " << operacija << " " << br2 << " = " << br1+br2; break;
+        // ili int rezultat = br1+br2 pa posle dolu cout ova
         case '-': cout << br1 << " " << operacija << " " << br2 << " = " << br1-br2; break;
         case '*': cout << br1 << " " << operacija << " " << br2 << " = " << br1*br2; break;
         case '/':
