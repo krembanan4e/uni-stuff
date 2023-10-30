@@ -48,10 +48,7 @@ int main() {
 
     }
 
-    else {
-        cout << "Nevaliden broj poeni!" << endl;
-    }
-
+    e
 
 
     return 0;
