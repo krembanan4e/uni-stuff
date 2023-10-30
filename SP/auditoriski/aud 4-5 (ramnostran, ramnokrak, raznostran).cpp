@@ -9,7 +9,7 @@ int main() {
     int pravoagolen;
     cin >> a >> b >> c;
     float S = ( a + b + c ) / 2;
-    float P = ( S * ( S - a ) * ( S - b ) * ( S - c ) );
+    float P = sqrt ( S * ( S - a ) * ( S - b ) * ( S - c ) );
     if ( ( a + b <= c ) || ( a + c <= b ) || ( b + c <= a ) ){
         cout << "Ne moze da se konstruira triagolnik!" << endl;
     }
