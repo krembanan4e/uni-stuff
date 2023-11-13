@@ -24,7 +24,7 @@ int main(){
         vkupno++;
     }
     procent = (100.0 / vkupno) * br;
-    cout << procent;
+    cout << procent<<"%";
 
     return 0;
 }
