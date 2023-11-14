@@ -11,7 +11,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int a, b, tempA, tempB, brCifriA = 0, brCifriB = 0, cifraA0, cifraA1, delenje;
+    int a, b, tempA, tempB, brCifriA = 0, brCifriB = 0, cifraA0, delenje;
     cin >> a >> b;
     tempA = a; tempB = b;
     int flag = 1;
