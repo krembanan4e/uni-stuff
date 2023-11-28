@@ -40,7 +40,7 @@ int findLargest (int start,int end){
 }
 
 int main(){
-    int pocetok, kraj,n;
+    int pocetok, kraj;
     cin>>pocetok>>kraj;
     cout<<"Largest Palindromic Number: "<<findLargest(pocetok,kraj)<<endl;
 
