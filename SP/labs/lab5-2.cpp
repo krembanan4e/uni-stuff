@@ -15,7 +15,6 @@
  * Објаснување: за тројката 1 2 3 вредноста на d e: |(1-2)+(2-3)| = 2, за 22 30 22 = 16, за 1 1 1 = 0. */
 
 #include <iostream>
-#include <climits>
 #include <cmath>
 using namespace std;
 
