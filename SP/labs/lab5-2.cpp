@@ -16,26 +16,27 @@
 
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
-int vrednostNaD (int x, int y, int z){
-    int xy = abs (x-y);
-    int yz = abs (y-z);
-    int d = xy+yz;
+int vrednostNaD(int x, int y, int z) {
+    int xy = abs(x - y);
+    int yz = abs(y - z);
+    int d = xy + yz;
     return d;
 }
 
-int main(){
-    int n,a,b,c,a1,b1,c1,min;
-    cin>>n>>a>>b>>c;
-    min=vrednostNaD(a,b,c);
-    for (int i=1; i<=n-1; i++){
-        cin>>a1>>b1>>c1;
-        if(min>vrednostNaD(a1,b1,c1)){
-            min= vrednostNaD(a1, b1, c1);
+int main() {
+    int n, a, b, c, a1, b1, c1, najmalaVrednostNaD;
+    cin >> n >> a >> b >> c;
+    najmalaVrednostNaD = vrednostNaD(a, b, c);
+    for (int i = 1; i <= n - 1; i++) {
+        cin >> a1 >> b1 >> c1;
+        if (najmalaVrednostNaD > vrednostNaD(a1, b1, c1)) {
+            najmalaVrednostNaD = vrednostNaD(a1, b1, c1);
         }
     }
-    cout<<min<<endl;
+    cout << najmalaVrednostNaD << endl;
 
     return 0;
 }
