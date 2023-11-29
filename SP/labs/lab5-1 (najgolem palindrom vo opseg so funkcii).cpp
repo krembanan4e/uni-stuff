@@ -8,42 +8,42 @@
  * 10 50        Largest Palindromic Number: 44 */
 
 #include <iostream>
+
 using namespace std;
 
-int reverse (int number){
-    int prevrten=0;
-    while (number!=0){
-        prevrten=prevrten*10+(number%10);
-        number/=10;
+int reverse(int number) {
+    int prevrten = 0;
+    while (number != 0) {
+        prevrten = prevrten * 10 + (number % 10);
+        number /= 10;
     }
     return prevrten;
 }
 
-bool isPalindrom (int number){
-    int broj=reverse(number);
-    if (broj == number){
-        return 1;
+bool isPalindrom(int number) {
+    int prevrtenBroj = reverse(number);
+    if (prevrtenBroj == number) {
+        return true;
     }
-    else{
-        return 0;
+    else {
+        return false;
     }
 }
 
-int findLargest (int start,int end){
+int findLargest(int start, int end) {
     int i;
-    for (i=end; i>=start; i--){
-        if (isPalindrom(i) == 1){
+    for (i = end; i >= start; i--) {
+        if (isPalindrom(i)) {
             break;
         }
     }
     return i;
 }
 
-int main(){
+int main() {
     int pocetok, kraj;
-    cin>>pocetok>>kraj;
-    cout<<"Largest Palindromic Number: "<<findLargest(pocetok,kraj)<<endl;
-
+    cin >> pocetok >> kraj;
+    cout << "Largest Palindromic Number: " << findLargest(pocetok, kraj) << endl;
 
     return 0;
 }
