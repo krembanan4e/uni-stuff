@@ -10,14 +10,46 @@
  * 3322 123  */
 
 #include <iostream>
+
 using namespace std;
 
-void appear (int first, int second){
-    
+void appear(int first, int second) {
+    int tempSecond, cifra1, cifra2;
+    while (first != 0) {
+        bool najde = true;
+        cifra1 = first % 10;
+        tempSecond = second;
+        while (tempSecond != 0) {
+            cifra2 = tempSecond % 10;
+            if (cifra2 == cifra1) {
+                break;
+            }
+            else {
+                tempSecond /= 10;
+            }
+            if (tempSecond == 0) {
+                najde = false;
+            }
+
+        }
+        if (!najde) {
+            cout << "NO" << endl;
+            break;
+        }
+        first /= 10;
+        if (first == 0) {
+            cout << "YES" << endl;
+            break;
+        }
+    }
 }
 
-int main(){
-
-
+int main() {
+    int n, a, b;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        cin >> a >> b;
+        appear(a, b);
+    }
     return 0;
 }
