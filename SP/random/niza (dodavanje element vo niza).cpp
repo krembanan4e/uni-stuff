@@ -27,7 +27,7 @@ int main() {
     int element, index;
     cout<<"Vnesi koj element da se dodajt";
     cin>>element;
-    cout<<"Vnesi index na elementot pred koj sho trebit da se dodajt drug element";
+    cout<<"Vnesi pozicija na koja sakash da se dodajt elementot";
     cin>>index;
 
     n++; //da se proshirit goleminata na nizata za edno mesto za da imat mesto za nov element, celata se shiftat vo desno za edno mesto posle to
