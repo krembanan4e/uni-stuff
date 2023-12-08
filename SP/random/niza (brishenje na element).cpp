@@ -22,11 +22,11 @@ int main() {
         cin >> a[i];
     }
 
-    int element;
-    cout<<"Vnesi index na elementot sho trebit da se izbrishit";
-    cin>>element;
+    int index;
+    cout<<"Vnesi pozicija na elementot sho trebit da se izbrishit";
+    cin>>index;
 
-    izbrishiElement(a,n,element);
+    izbrishiElement(a,n,index);
     n--; //se namalvit goleminata na nizata za 1, zsh cela se shiftat vo levo, i da ne se zemat posledniot element kako dupli
 
     for (int i = 0; i < n; i++) {
