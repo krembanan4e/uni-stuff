@@ -29,22 +29,22 @@ int main(){
     for (int i=0; i<n; i++){
         for (int j=0; j<n; j++){
             if (a[i][j]<0){
-                if (i==0 && j>0 && j<n){ //aku elementot e vo prva redica
+                if (i==0){ //aku elementot e vo prva redica
                     int suma=0;
                     suma = a[i][j-1] + a[i][j+1] + a[i+1][j];
                     a[i][j] = suma;
                 }
-                else if (i==n && j>0 && j<n){  //aku elementot e vo n-ta redica
+                else if (i==n){  //aku elementot e vo n-ta redica
                     int suma=0;
                     suma = a[i][j-1] + a[i][j+1] + a[i-1][j];
                     a[i][j] = suma;
                 }
-                else if (j==0 && i>0 && i<n){  //aku elementot e vo prva kolona
+                else if (j==0){  //aku elementot e vo prva kolona
                     int suma=0;
                     suma = a[i][j+1] + a[i+1][j] + a[i-1][j];
                     a[i][j] = suma;
                 }
-                else if (j==n && i>0 && i<n){  //aku elementot e vo n-ta kolona
+                else if (j==n){  //aku elementot e vo n-ta kolona
                     int suma=0;
                     suma = a[i][j-1] + a[i+1][j] + a[i-1][j];
                     a[i][j] = suma;
