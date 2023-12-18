@@ -10,6 +10,8 @@
 // 4
 // 2 5 8 10
 
+//Најдолу е објаснато решениево
+
 #include <iostream>
 using namespace std;
 
@@ -66,3 +68,12 @@ int main(){
 
    return 0;
 }
+
+
+// m = 5   a = 1 4 6 9 15
+// n = 4   b = 2 5 8 10
+// se sporedvat eden element od prvata i eden od vtorata niza, se dur stignit do dolzinata na pokratkata niza
+// m > n  --->  1<2 (pecati 1 2), 4<5 (pecati 4 5), 6<8 (pecati 6 8), 9<10 (pecati 9 10) 
+// vtoriot for za elementite sho ostanaja vo podolgata niza da se ispecatet (pocvit od dolzinata na pokratkata, do dolzinata na podolgata, gi pecatit elementite)
+
+
