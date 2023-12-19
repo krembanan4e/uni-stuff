@@ -4,76 +4,55 @@
 //Напомена: Елементите во двете низи кои се внесуваат се сортирани.
 //Максималната должина на низите е 100. Не смеете да користите алгоритам за сортирање.
 
-// input         output
-// 5             1 2 4 5 6 8 9 10 15
-// 1 4 6 9 15
-// 4
-// 2 5 8 10
-
-//Најдолу е објаснато решениево
+// input         output                         input                output
+// 5             1 2 4 5 6 8 9 10 15            4                    1 3 4 5 7 8 9
+// 1 4 6 9 15                                   1 3 7 9 
+// 4                                            3 
+// 2 5 8 10                                     4 5 8
 
 #include <iostream>
 using namespace std;
 
 int main(){
-   int m, n, a[100], b[100], c[100];
-   cin>>m;
-   for (int i=0; i<m; i++){
-       cin>>a[i];
-   }
+    int n, m, a[100], b[100], c[100], k=0;
+
     cin>>n;
-    for (int i=0; i<n; i++){
+    for(int i=0; i<n; i++){
+        cin>>a[i];
+    }
+
+    cin>>m;
+    for(int i=0; i<m; i++){
         cin>>b[i];
     }
 
-    if (m>n){ //aku prvata niza e podolga
-        for (int i=0; i<n; i++){
-            if (a[i]<b[i]){
-                cout<<a[i]<<" "<<b[i]<<" ";
-            }
-            else {
-                cout<<b[i]<<" "<<a[i]<<" ";
-            }
+    int i, j;
+    for(i=0, j=0; i<n;){
+        if (a[i]<b[j]){
+            c[k]=a[i];
+            k++;
+            i++;
         }
-        for (int i=n; i<m; i++){
-            cout<<a[i]<<" ";
-        }
-    }
-
-    else if (n>m){ //aku vtorata niza e podolga
-        for (int i=0; i<m; i++){
-            if (a[i]<b[i]){
-                cout<<a[i]<<" "<<b[i]<<" ";
-            }
-            else {
-                cout<<b[i]<<" "<<a[i]<<" ";
-            }
-        }
-        for (int i=m; i<n; i++){
-            cout<<b[i]<<" ";
+        else {
+            c[k]=b[j];
+            k++;
+            j++;
         }
     }
 
-  else { //aku nizite se so ista dolzina
-        for (int i=0; i<m; i++){
-            if (a[i]<b[i]){
-                cout<<a[i]<<" "<<b[i]<<" ";
-            }
-            else {
-                cout<<b[i]<<" "<<a[i]<<" ";
-            }
-        }
+    while(i<n){
+        c[k]=a[i];
+        k++;
     }
 
+    while(i<m){
+        c[k]=b[i];
+        k++;
+    }
 
-   return 0;
+    for(int i=0; i<n+m; i++){
+        cout<<c[i]<<" ";
+    }
+    
+    return 0;
 }
-
-
-// m = 5   a = 1 4 6 9 15
-// n = 4   b = 2 5 8 10
-// se sporedvat eden element od prvata i eden od vtorata niza, se dur stignit do dolzinata na pokratkata niza
-// m > n  --->  1<2 (pecati 1 2), 4<5 (pecati 4 5), 6<8 (pecati 6 8), 9<10 (pecati 9 10) 
-// vtoriot for za elementite sho ostanaja vo podolgata niza da se ispecatet (pocvit od dolzinata na pokratkata, do dolzinata na podolgata, gi pecatit elementite)
-
-
