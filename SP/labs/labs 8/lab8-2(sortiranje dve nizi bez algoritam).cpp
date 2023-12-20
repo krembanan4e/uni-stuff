@@ -27,7 +27,7 @@ int main(){
     }
 
     int i, j;
-    for(i=0, j=0; i<n;){
+    for(i=0, j=0; i<n && j<m;){
         if (a[i]<b[j]){
             c[k]=a[i];
             k++;
@@ -43,11 +43,13 @@ int main(){
     while(i<n){
         c[k]=a[i];
         k++;
+        i++;
     }
 
-    while(i<m){
-        c[k]=b[i];
+    while(j<m){
+        c[k]=b[j];
         k++;
+        j++;
     }
 
     for(int i=0; i<n+m; i++){
