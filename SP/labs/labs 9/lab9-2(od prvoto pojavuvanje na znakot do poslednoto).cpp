@@ -11,34 +11,29 @@
 using namespace std;
 
 int main(){
-    char str[500], nova[500], final[500];
+    char niza[500], nova[500], final[500];
     char c;
-    int k=0,j=0;
-    //cin.ignore();
-    cin.getline(str, 500);
+    cin.getline(niza, 500);
     cin>>c;
+    int k=0, j=0;
 
-    for (int i = 0; i < strlen(str); ++i) { //prvoto pojavuvanje
-        if (tolower(str[i])== tolower(c)){
+    for (int i = 0; i < strlen(niza); ++i) {
+        if (tolower(niza[i])== tolower(c)){
             k=i;
+            strcpy(nova, niza+k);
             break;
         }
     }
 
-    strcpy(nova, str+k);
-
-    int length = strlen(nova);
-
-    for (int i=length; i>=0; i--) {  //poslednoto pojavuvanje
-        if (tolower(nova[i]) == tolower(c)){
+    for (int i = strlen(nova); i >0 ; i--) {
+        if (tolower(nova[i])== tolower(c)){
             j=i+1;
             final[j]='\0';
             strncpy(final, nova, j);
             break;
         }
     }
-
-    cout << final;
+    cout<<final;
 
     return 0;
 }
