@@ -13,12 +13,12 @@ using namespace std;
 int main(){
     char str[500], nova[500], final[500];
     char c;
-    int k,j;
-    cin.ignore();
+    int k=0,j=0;
+    //cin.ignore();
     cin.getline(str, 500);
     cin>>c;
 
-    for (int i = 0; i < strlen(str); ++i) {
+    for (int i = 0; i < strlen(str); ++i) { //prvoto pojavuvanje
         if (tolower(str[i])== tolower(c)){
             k=i;
             break;
@@ -27,13 +27,16 @@ int main(){
 
     strcpy(nova, str+k);
 
-    for (int i=strlen(nova); i>1; i--) {
-        if (tolower(nova[i])== tolower(c)){
+    int length = strlen(nova);
+
+    for (int i=length; i>=0; i--) {  //poslednoto pojavuvanje
+        if (tolower(nova[i]) == tolower(c)){
             j=i+1;
+            final[j]='\0';
+            strncpy(final, nova, j);
             break;
         }
     }
-    strncpy(final, nova, j);
 
     cout << final;
 
