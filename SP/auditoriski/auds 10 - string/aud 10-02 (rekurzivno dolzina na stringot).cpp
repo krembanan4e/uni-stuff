@@ -8,16 +8,16 @@
 #include <cstring>
 using namespace std;
 
-int length_of_string (char * str, int i){
-    if ((str[i])=='\0')
+int length_of_string (char * str){
+    if (*str=='\0')
         return 0;
-    return 1 + length_of_string(str, i+1);
+    return 1 + length_of_string(str+1);
 }
 
 int main(){
     char str[100];
     cin.getline(str, 100);
-    cout<<length_of_string(str, 0);
+    cout<<length_of_string(str);
 
     return 0;
 }
