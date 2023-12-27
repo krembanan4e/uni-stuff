@@ -28,7 +28,7 @@ int main() {
 
             //aku dolzinata na zborot e neparna prevrti go zborot
             if (strlen(zbor) % 2 != 0){
-                for (j-1; j>=0 ; j--) {
+                for (j= strlen(zbor); j>=0 ; j--) {
                     cout << zbor[j-1];
                 }
             }
