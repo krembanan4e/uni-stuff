@@ -14,17 +14,17 @@ int main() {
     int i, j;
 
     for (i = 0, j=0; i <= strlen(niza); ++i) {
+        
         //vo 'zbor' redi gi bukvite dur dojt do prazno mesto ili \0
         if (!isspace(niza[i]) && niza[i]!='\0'){
             zbor[j++]=niza[i];
         }
+            
         //aku dojt do prazno mesto
         else{
 
             //zatvori ja nizata
             zbor[j]='\0';
-
-            //cout<<zbor<<" "<<strlen(zbor)<<endl;
 
             //aku dolzinata na zborot e neparna prevrti go zborot
             if (strlen(zbor) % 2 != 0){
@@ -39,7 +39,7 @@ int main() {
                     cout << zbor[j];
                 }
             }
-            //cout<<" ";
+
             j=0;
         }
     }
