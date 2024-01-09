@@ -42,17 +42,14 @@ int main() {
     for (int i = 0; i < k; ++i) {
        int suma=0;
        suma = glavna[i] + sporedna[i];
-       if ((sqrt(suma) * sqrt(suma)) == suma ){
+       int koren = sqrt(suma);
+       if ( pow(koren, 2) == suma ){
            cout<<suma<<" e poln kvadrat."<<endl;
        }
        else{
            cout<<suma<<" ne e poln kvadrat."<<endl;
        }
     }
-
-
-
-
 
     return 0;
 }
