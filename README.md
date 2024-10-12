@@ -3,3 +3,4 @@
 ## 2 семестар - ООП
 ##### [Лабораториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/OOP/labs) / [колоквиумски за вежбање](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/OOP/kolokviumski)
 ## 3 семестар - ПАПС
+##### [рандом задачи](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/random)
