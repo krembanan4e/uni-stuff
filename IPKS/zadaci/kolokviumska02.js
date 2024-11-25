@@ -69,7 +69,7 @@ ne rabotit :)))
 
         // ako pomine dodavanjeto
 
-        var karticka = document.getElementById("name")
+        var karticka = document.getElementById(name)
         if (karticka != null){
             karticka.style.width = shirina
             karticka.style.height = visina
