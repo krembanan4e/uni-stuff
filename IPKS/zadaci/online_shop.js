@@ -85,7 +85,7 @@
 
 
 <script>
-    var total_cost = 0
+    var active_items = 0
     function add(){
         var name = document.getElementById("name")
         name = name.value
@@ -134,10 +134,18 @@
             return;
         }
 
+        active_items += 1;
+        how_many_are_active()
+
         var tabela = document.getElementById(use)
         var redica = "<tr><td>"+name+"</td><td>"+item+"</td><td>"+price+"</td><td>"+code+"</td><td>"+katalonski+"</td><td><button onclick='sold(this)'>Sold</button></td></tr>"
         tabela.innerHTML += redica
 
+    }
+
+    function how_many_are_active(){
+        var active_ekran = document.getElementById("active-items")
+        active_ekran.innerHTML = active_items
     }
 
     function sold(obj){
@@ -145,7 +153,11 @@
         redica.className = "yellow"
         var kopce = obj
         kopce.parentNode.removeChild(kopce)
+        active_items -= 1;
+        how_many_are_active()
+        
     }
+
 </script>
 
 
