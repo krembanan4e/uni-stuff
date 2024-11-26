@@ -85,7 +85,7 @@
         <div class="lucky" style="background-color: lightyellow;" id="sedmi">7</div>
     </div>
     <button onclick="get_weekly_combination()">Get weekly combination</button>
-    <p>Total win: <span id="total">0</span></p>
+    <p>Total win: <span id="total"></span></p>
 </div>
 
 </div>
@@ -221,7 +221,8 @@
             else{
                 total_win[i].innerHTML = (parseInt(suma) + counter*30)
             }
-            total += total_win[i].innerHTML
+            total = total_win[i].innerHTML
+            prikazi()
         }
 
 
@@ -230,6 +231,11 @@
     function brisi(obj){
         var karticka = obj.parentNode.parentNode
         karticka.parentNode.removeChild(karticka)
+    }
+
+    function prikazi(){
+        var ekran = document.getElementById("total")
+        ekran.innerHTML = total
     }
 
 </script>
