@@ -1,8 +1,4 @@
 
-ne rabotit :)))
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
