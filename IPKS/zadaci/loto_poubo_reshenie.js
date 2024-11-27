@@ -3,42 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
     <style>
         h1 {
             text-align: center;
         }
-
         #lotteryGame {
             display: flex;
         }
-
         #lotteryGame > div {
             margin-right: 50px;
         }
-
         #lotteryGame > div > div {
             margin: 10px;
         }
-
         label, input {
             display: inline-block;
             width: 200px;
         }
-
         .card {
             display: inline-block;
             border: 1px solid black;
             margin: 10px;
             padding: 10px;
         }
-
         ul {
             list-style-type: none;
             display: flex;
             flex-direction: row;
         }
-
         li {
             border: 1px solid black;
             border-radius: 50%;
@@ -47,7 +39,6 @@
             display: inline-block;
             width: 17px;
         }
-
     </style>
 </head>
 <body>
@@ -76,7 +67,6 @@
             <option>no</option>
         </select>
         </div>
-
         <button onclick="add()">Add</button>
     </div>
 
@@ -153,7 +143,6 @@
         if (kartickiCounter === 5) {
             unclickableButton.disabled = false
         }
-
     }
 
     //funkcija za brisenje karticka i update na totalWin rezultatot, vo zavisnost od brojot na pogodoci na kartickata
@@ -195,7 +184,6 @@
         mestoZaLuckyNumbers.innerHTML = ul.outerHTML
 
         updateTickets()
-
     }
 
     //funkcija za menvenje pozadina na kartickite vo zavisnost od brojot na pogodoci
@@ -225,6 +213,5 @@
     }
 
 </script>
-
 </body>
 </html>
