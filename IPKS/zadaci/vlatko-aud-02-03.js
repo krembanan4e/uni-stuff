@@ -76,6 +76,7 @@
         // prvoto td vtoroto tr
         var redica = obj.parentNode.parentNode
         var cena_redica = redica.classList.value
+        //var cena_redica = redica.getAttribute("class")
         total_cost -= cena_redica
         prikazi_cena()
         redica.parentNode.removeChild(redica)
