@@ -41,9 +41,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.nextLine();
-        List<Person> list = new ArrayList<>();
-        CBHT<String, List<Person>> table = new CBHT<>(2*n);
-
+        CBHT<String, Person> table = new CBHT<>(2*n);
         for (int i = 0; i < n; i++) {
             String s = sc.nextLine();
             String []str = s.split(" ");
@@ -53,23 +51,12 @@ public class Main {
             String time = str[4];
             String city = str[5];
             int price = Integer.parseInt(str[6]);
-
             Person p = new Person(name, budget, ipAddress, time, city, price);
 
-            if (budget > price){ //togas dodaj go coekot
-                SLLNode<MapEntry<String, List<Person>>> curr = table.search(city);
-                if (curr != null){
-                    list.add(p);
-                    table.insert(city, list);
-                }
-                else{
-                    List list1 = new ArrayList();
-                    list1.add(p);
-                    table.insert(city, list1);
-                }
+            if (budget > price){
+                table.insert(city, new Person(name, budget, ipAddress, time, city, price));
             }
         }
-
         System.out.println(table);
         System.out.println("Searching...");
 
@@ -79,28 +66,31 @@ public class Main {
             String s = sc.nextLine();
             String []str = s.split(" ");
             String city = str[5];
-            int counter = 0;
             int min = Integer.MAX_VALUE;
-            Person user = null; //coekot sho imat najmnogu potroseno
+            int counter = 0;
+            SLLNode<MapEntry<String, Person>> user = null; //toj sho imat najmnogu potroseno
 
-            SLLNode<MapEntry<String, List<Person>>> curr = table.search(city);
-            if (curr != null){
-                Person p = curr.element.value.getFirst();
-                while (curr != null){
-                    counter ++;
-                    if (p.budget-p.price < min){
-                        min = p.budget-p.price;
-                        user = p;
+
+            SLLNode<MapEntry<String, Person>> curr = table.search(city);
+            if (curr != null){ //aku imat takov zapis vo tabelata
+                while(curr != null){ //shetaj niz zapisite vo ta kofichka
+                    counter++;
+                    if (curr.element.value.budget-curr.element.value.price < min){
+                        min = curr.element.value.budget-curr.element.value.price;
+                        user = curr;
                     }
                     curr = curr.succ;
                 }
             }
             else{
-                System.out.println("Nema zapis za toj grad!");
+                System.out.println("Nema zapis za toj grad");
             }
 
             System.out.println("City: " + city + " has the following number of customers:\n" + counter);
-            System.out.println("The user who spent the most purchasing for that city is: \n" + user.toString());
+            if (user != null) {
+                System.out.println("The user who spent the most purchasing for that city is: \n" + user.element.value);
+            }
         }
     }
 }
+
