@@ -1,0 +1,112 @@
+//import CBHT, MapEntry, SLLNode
+
+class Person{
+    String name;
+    int budget;
+    String ipAddress;
+    String time;
+    String city;
+    int price;
+
+    public Person(String name, int budget, String ipAddress, String time, String city, int price) {
+        this.name = name;
+        this.budget = budget;
+        this.ipAddress = ipAddress;
+        this.time = time;
+        this.city = city;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return name + " with salary " + budget + " from address " + ipAddress + " who logged in " + time;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return budget == person.budget && price == person.price && Objects.equals(name, person.name) && Objects.equals(ipAddress, person.ipAddress) && Objects.equals(time, person.time) && Objects.equals(city, person.city);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, budget, ipAddress, time, city, price);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.nextLine();
+        CBHT<String, Person> table = new CBHT<>(2*n);
+        for (int i = 0; i < n; i++) {
+            String s = sc.nextLine();
+            String []str = s.split(" ");
+
+            String name = str[0] + " " + str[1];
+            int budget = Integer.parseInt(str[2]);
+            String ipAddress = str[3];
+            String []ip = ipAddress.split("\\.");
+            String ipAddr = ip[0]+"."+ip[1]+"."+ip[2];
+            String time = str[4];
+            String city = str[5];
+            int price = Integer.parseInt(str[6]);
+            String []hour = time.split(":");
+            int hours = Integer.parseInt(hour[0]);
+
+            if (hours >= 12){
+                table.insert(ipAddr, new Person(name, budget, ipAddress, time, city, price));
+            }
+        }
+
+        System.out.println(table);
+        System.out.println("Searching...");
+
+
+        int m = sc.nextInt();
+        sc.nextLine();
+        for (int i = 0; i < m; i++) {
+            String s = sc.nextLine();
+            String []str = s.split(" ");
+            String ipAddress = str[3];
+            String []ip = ipAddress.split("\\.");
+            String ipAddr = ip[0]+"."+ip[1]+"."+ip[2];
+            int counter = 0;
+            int min_hours = Integer.MAX_VALUE;
+            int min_minutes = Integer.MAX_VALUE;
+            SLLNode<MapEntry<String, Person>> person = null; //choekot sho go barame
+
+            SLLNode<MapEntry<String, Person>> curr = table.search(ipAddr);
+            if (curr != null){ //najde takov zapis
+                while (curr != null) { //shetaj niz podatocite vo toj zapis
+                    String []time = curr.element.value.time.split(":");
+                    int hours = Integer.parseInt(time[0]);
+                    int minutes = Integer.parseInt(time[1]);
+
+                    if (hours <= min_hours && minutes <= min_minutes){
+                        min_hours = hours;
+                        min_minutes = minutes;
+                        person = curr;
+                    }
+                    counter++;
+                    curr = curr.succ;
+                }
+            }
+            else{
+                System.out.println("Nema zapis za taa ip adresa");
+            }
+
+            System.out.println("IP network: " + ipAddr + " has the following number of users: \n" + counter);
+            if (person != null){
+                System.out.println("The user logged on earliest after noon from that network is: \n" + person.element.value);
+            }
+
+        }
+
+    }
+}
+
+
