@@ -161,7 +161,7 @@ public class Main {
         CBHT<String, Person> table = new CBHT<>(2*n); //key = grad(String), value = person
 
         for (int i = 0; i < n; i++) {
-            String[] line = sc.nextLine().split("\\s+");
+            String[] line = sc.nextLine().split("\\s+"); //za pojke space mesta, ili tab
             String name = line[0] + " " + line[1];
             int budget = Integer.parseInt(line[2]);
             String ipAddress = line[3];
@@ -174,14 +174,14 @@ public class Main {
 
             SLLNode<MapEntry<String, Person>> p = table.search(city);
 
-            if (hours >= 12){
+            if (hours >= 12){ //samo togas dodavaj lugje vo tabelata
                 if (p != null){ //aku postojt zapis so toj grad
                     Person current_person = p.element.value;
                     int prev_counter = p.element.value.counter;
                     if (time.compareTo(current_person.time) < 0){ //sporedi go novoto vreme so postoeckoto vreme, aku e pomalo LEKSIKOGRAFSKI togas dodaj nov coek so novoto vreme
                         table.insert(city, new Person(name, budget, ipAddress, time, city, price, prev_counter+1)); //aku ne e prv coek, togas kolku lugje bile pred to +1
                     }
-                    else{ //aku postoeckoto vreme e pomalo od novoto vreme, dodaj go postoeckiot coek
+                    else{ //aku postoeckoto vreme e pomalo od novoto vreme, dodaj go postoeckiot coek, overwrite
                         table.insert(city, new Person(current_person.name, current_person.budget, current_person.ipAddress, current_person.time, current_person.city, current_person.price, prev_counter+1)); //aku ne e prv coek, togas kolku lugje bile pred to +1
                     }
                 }
