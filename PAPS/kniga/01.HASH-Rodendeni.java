@@ -1,4 +1,17 @@
-//strana 181
+/*
+strana 181
+
+input:
+4
+20.7.1976
+16.7.1988
+18.7.1966
+5.6.1988 
+7
+
+output:
+3
+*/
 
 import java.util.Scanner;
 
