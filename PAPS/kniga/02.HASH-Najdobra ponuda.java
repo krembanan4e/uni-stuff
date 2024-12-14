@@ -1,4 +1,6 @@
 /*
+strana 186
+
 input:
 7
 27/01/2016 14:00 NewYork 6000
