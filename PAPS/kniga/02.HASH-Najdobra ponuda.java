@@ -1,5 +1,5 @@
 /*
-strana 186
+strana 186 (resenie so class Ponuda)
 
 input:
 7
@@ -128,39 +128,71 @@ class CBHT<K, E> {
     }
 }
 
+class Ponuda{
+    String time;
+    String city;
+    int price;
+
+    public Ponuda(String time, String city, int price) {
+        this.time = time;
+        this.city = city;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return time + " " + city + " " + price;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ponuda ponuda = (Ponuda) o;
+        return price == ponuda.price && Objects.equals(time, ponuda.time) && Objects.equals(city, ponuda.city);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(time, city, price);
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.nextLine();
-        CBHT<String, String> table = new CBHT<>(2*n-1); //key e celiot datum
+        CBHT<String, Ponuda> table = new CBHT<>(2*n-1);
         for (int i = 0; i < n; i++) {
             String []parts = sc.nextLine().split(" ");
             String datum = parts[0];
-            int cena = Integer.parseInt(parts[3]);
-            String ponuda = parts[1] + " " + parts[2] + " " + parts[3]; //value sho se pecatit nakraj
-            SLLNode<MapEntry<String, String>> curr = table.search(datum);
-            
-            if (curr != null){ //aku postojt zapis so toj datum
-                String prev_ponuda = curr.element.value;
-                if (Integer.parseInt(prev_ponuda.split(" ")[2]) > cena){  //pak dodaj go prethodnit element, aku prethodnata cena e pogolema od novata
-                    table.insert(datum, prev_ponuda);
+            String time = parts[1];
+            String city = parts[2];
+            int price = Integer.parseInt(parts[3]);
+
+            SLLNode<MapEntry<String, Ponuda>> curr = table.search(datum);
+            if (curr != null) { //postojt zapis so toj datum
+                int prev_price = curr.element.value.price;
+                if (prev_price > price){ //dodaj go istiot zapis
+                    table.insert(datum, new Ponuda(curr.element.value.time, curr.element.value.city, curr.element.value.price));
                 }
-                else{  //dodaj go noviot element, overwrite na stariot, aku novata cena e pogolema od prethodnata
-                    table.insert(datum, ponuda);
+                else{ //dodaj go noviot zapis
+                    table.insert(datum, new Ponuda(time, city, price));
                 }
             }
-            else{ //aku ne postojt zapis so toj datum
-                table.insert(datum, ponuda);
+            else{ //ne postojt zapis so toj datum
+                table.insert(datum, new Ponuda(time, city, price));
             }
         }
+
         String d = sc.nextLine();
-        SLLNode<MapEntry<String, String>> curr = table.search(d);
-        if (curr != null){
+        SLLNode<MapEntry<String, Ponuda>>  curr = table.search(d);
+        if (curr != null) {
             System.out.println(curr.element.value);
         }
-        else{
-            System.out.println("No offers");
+        else {
+            System.out.println("No offer");
         }
     }
 }
