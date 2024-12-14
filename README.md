@@ -4,6 +4,6 @@
 ##### [Лабораториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/OOP/labs) / [колоквиумски за вежбање](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/OOP/kolokviumski)
 ## 3 семестар 
 ## ПАПС
-##### [Лабораториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/labs) / [аудиториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/auditoriski) / [задачи за вежбање од Courses](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/zadaci) /  [random idk](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/random)
+##### [Лабораториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/labs) / [аудиториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/auditoriski) / [задачи за вежбање од Courses](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/zadaci) /  [од книгата](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/kniga) / [random idk](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/random)
 ## ИПКС
 ##### [Задачи](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/IPKS/zadaci)
