@@ -62,12 +62,12 @@
             bulletPozX += 2
             bullet.style.transform = `translateX(${bulletPozX}px)`
 
-            // kako e proverkata za aku bullet go pogodit alien ????
-            // if (){ 
-            //     alien.style.display = "none"
-            //     document.removeChild(bullet)
-            //     clearInterval(bulletInterval)
-            // }
+            // ova so +90 e visinata na slikata so alien i +70 e visinata na slikata so plane
+             if (planePozY < alienPozY + 90 && planePozY + 70 > alienPozY){
+                alien.style.display = "none"
+                document.removeChild(bullet)
+                clearInterval(bulletInterval)
+            }
 
             if (bulletPozX >= 1920){
                 plane.removeChild(bullet)
