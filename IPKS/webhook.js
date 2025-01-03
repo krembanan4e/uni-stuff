@@ -23,6 +23,7 @@
 <script>
     
     /*
+    Ova vo webhook taku vo Edit gore, kaj Content type: application/json, i selektiraj Add CORS headers
     [{"color":"red", "width":"70px", "height":"90px", "top":"400", "left":"260"}, 
     {"color":"green", "width":"120px", "height":"140px", "top":"180", "left":"190"},
     {"color":"blue", "width":"200px", "height":"60px", "top":"710", "left":"210"}, 
