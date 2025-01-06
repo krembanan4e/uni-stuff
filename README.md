@@ -6,4 +6,4 @@
 ## ПАПС
 ##### [Лабораториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/labs) / [аудиториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/auditoriski) / [задачи](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS) /  [од книгата](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/kniga) 
 ## ИПКС
-##### [Задачи](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/IPKS/zadaci) / [Анимации](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/IPKS/animacii)
+##### [Задачи](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/IPKS/zadaci) / [Анимации](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/IPKS/animacii) / [Визуелизација](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/IPKS/vizuelizacija)
