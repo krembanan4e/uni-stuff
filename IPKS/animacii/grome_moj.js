@@ -124,7 +124,7 @@
     }
 
     var score = 0
-    var grom_counter = 0
+    var grom_counter = 1
 
     function grome_moj(){
         grom_counter += 1
