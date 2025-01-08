@@ -10,12 +10,12 @@
         ova na webhook
 
         [
-        {"id":"1", "dir": "vertical", "width": "87px", "height":"43px", "score": 52, "left":50, "top":180},
-        {"id":"2", "dir": "horizontal", "width": "112px", "height":"48px", "score": 2, "left":140, "top":250},
-        {"id":"3", "dir": "vertical", "width": "47px", "height":"97px", "score": 37, "left":560, "top":380},
-        {"id":"4", "dir": "vertical", "width": "71px", "height":"71px", "score": 150, "left":450, "top":350},
-        {"id":"5", "dir": "horizontal", "width": "76px", "height":"95px", "score": 24, "left":650, "top":15},
-        {"id":"6", "dir": "vertical", "width": "100px", "height":"132px", "score": 73, "left": 200, "top":70}
+        {"id":"1", "dir": "vertical", "width": "87px", "height":"43px", "score": 52, "left":50, "top":180, "color":"red"},
+        {"id":"2", "dir": "horizontal", "width": "112px", "height":"48px", "score": 2, "left":140, "top":250, "color":"green"},
+        {"id":"3", "dir": "vertical", "width": "47px", "height":"97px", "score": 37, "left":560, "top":380, "color":"blue"},
+        {"id":"4", "dir": "vertical", "width": "71px", "height":"71px", "score": 150, "left":450, "top":350, "color":"yellow"},
+        {"id":"5", "dir": "horizontal", "width": "76px", "height":"95px", "score": 24, "left":650, "top":15, "color":"purple"},
+        {"id":"6", "dir": "vertical", "width": "100px", "height":"132px", "score": 73, "left": 200, "top":70, "color":"pink"}
         ]
 
          */
