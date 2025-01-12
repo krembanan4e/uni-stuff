@@ -7,9 +7,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <style>
         /*
-        
+
         na webhook:
-        
+
         [
         {
             "team": "Lakers",
@@ -34,6 +34,11 @@
         }
     ]
          */
+
+        #chart{
+            width: 1500px;
+            height: 800px;
+        }
     </style>
 </head>
 <body>
@@ -102,7 +107,8 @@
 
 
         let traces = [dataL, dataW]
-        Plotly.newPlot('chart', traces);
+        let layout = {title: "All positions"}
+        Plotly.newPlot('chart', traces, layout);
     }
 
     function prikaziEden(){
@@ -140,7 +146,8 @@
 
 
         let traces = [dataL, dataW]
-        Plotly.newPlot('chart', traces);
+        let layout = {title: opcija+"s"}
+        Plotly.newPlot('chart', traces, layout);
 
     }
 
