@@ -1,6 +1,6 @@
 package hesh;
 import java.util.*;
-//strana 251 vo knigata
+//strana 240 vo knigata
 
 /*
 Пример:
