@@ -1,5 +1,5 @@
 /*
-strana 186 (resenie so class Ponuda)
+strana 176 (resenie so class Ponuda)
 
 input:
 7
