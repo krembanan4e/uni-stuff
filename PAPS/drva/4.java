@@ -1,7 +1,7 @@
 package drva.binaryTree;
 import java.util.*;
 
-public class Drva2 {
+public class Drva4 {
     public static BNode<String> find (String element, BNode<String> node){
         if (node == null){
             return null;
