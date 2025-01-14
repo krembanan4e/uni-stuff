@@ -1,6 +1,6 @@
 /*
 smeneta e hash funkcijata vo CBHT, daena vo zadacata 
-strana 201
+strana 191
 
 input:
 5
