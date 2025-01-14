@@ -1,5 +1,5 @@
 /*
-strana 181
+strana 171
 
 input:
 4
