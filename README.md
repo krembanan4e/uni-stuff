@@ -1,4 +1,4 @@
-## СП
+## [СП](https://github.com/krembanan4e/idk/tree/main/SP)
 ##### [Лабораториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/labs) / [аудиториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/auditoriski) / [колоквиумски за вежбање](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/za%20vezhbanje) / [алгоритми](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/random) / [други лабс](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/dopolnitelni%20labs)
 ## ООП
 ##### [Лабораториски](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/OOP/labs) / [колоквиумски за вежбање](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/OOP/kolokviumski)
