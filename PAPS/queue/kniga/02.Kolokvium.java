@@ -15,7 +15,7 @@ SlobodanKalajdziski
 AnastasMisev
 1
 IlinkaIvanoska
-------------------------------
+
 Излез: 1
 IlinkaIvanoska
 VladimirTrajkovik
@@ -83,8 +83,8 @@ public class KnigaQueue_str129 {
             System.out.println(i+1);
             for (int j=0; j<kapacitet; j++){
                 if (!site.isEmpty()){
-                    System.out.println(site.get(0));
-                    site.remove(0);
+                    System.out.println(site.getFirst());
+                    site.removeFirst();
                 }
                 else {
                     break;
