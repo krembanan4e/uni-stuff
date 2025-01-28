@@ -40,23 +40,24 @@ public class KnigaQueue_str133 {
         String tip;
         String prethoden_tip = "";
         for (int i = 0; i < n+m; i++) {
-            String []parts = aps.get(0).split(" ");
+            String []parts = aps.getFirst().split(" ");
             String ime = parts[0];
             tip = parts[1];
 
             if (tip.equals(prethoden_tip)){
-                aps.add(aps.get(0));
-                aps.remove(0);
+                aps.add(aps.getFirst());
+                aps.removeFirst();
                 if (!mms.isEmpty()){
-                    System.out.println(mms.get(0));
-                    mms.remove(0);
+                    System.out.println(mms.getFirst());
+                    mms.removeFirst();
                 }
             }
             else{
                 System.out.println(ime);
-                aps.remove(0);
+                aps.removeFirst();
                 prethoden_tip = tip;
-            } 
+            }
+
         }
     }
 }
