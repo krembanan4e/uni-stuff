@@ -21,7 +21,7 @@ package queue;
 ЛушиБеса
 РаjчинМартин
 ПоповскиАлександар
---------------------------------
+
 Излез:
 Polagaat e-test:
 termin 1
@@ -80,8 +80,8 @@ public class KnigaQueue_str136 {
 
         //prvo e-test, pa dvete(teorija), pa zadaci, pa dvete(zadaci)
 
-        int teorija = (int) Math.ceil((n1+n3) / 20); //kolku termini trebet za teorija
-        int prakticno = (int) Math.ceil((n2+n3) / 20); //kolku termini trebet za prakticno
+        int teorija = (int) Math.ceil((n1+n3) / 20); //kolku termini trebat za teorija
+        int prakticno = (int) Math.ceil((n2+n3) / 20); //kolku termini trebat za prakticno
         int x=0;
 
         if (teorija==0){
@@ -96,8 +96,8 @@ public class KnigaQueue_str136 {
             System.out.println("termin " + i);
             for (int j=0; j<kapacitet; j++){
                 while(!e_test.isEmpty()){
-                    System.out.println(e_test.get(0));
-                    e_test.remove(0);
+                    System.out.println(e_test.getFirst());
+                    e_test.removeFirst();
                 }
                 if (e_test.isEmpty()){
                     if (x == dvete.size()){
@@ -116,8 +116,8 @@ public class KnigaQueue_str136 {
             System.out.println("termin " + i);
             for (int j=0; j<kapacitet; j++){
                 while(!zadaci.isEmpty()){
-                    System.out.println(zadaci.get(0));
-                    zadaci.remove(0);
+                    System.out.println(zadaci.getFirst());
+                    zadaci.removeFirst();
                 }
                 if (zadaci.isEmpty()){
                     if (x == dvete.size()){
