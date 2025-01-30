@@ -43,6 +43,8 @@ public class Courses06 {
         ArrayList<Integer> zalutani = new ArrayList<>();
         ArrayList<Integer> pozicii = new ArrayList<>();
 
+        //od kolku brojoj e pomal toj broj -> tolku pozicii se
+        
         int counter = 0;
         int num = 0;
         for (int i = 0; i < n; i++) {
@@ -76,6 +78,7 @@ public class Courses06 {
         Collections.reverse(zalutani);
         Collections.reverse(pozicii);
         System.out.println(zalutani.size());
+        
         for (int i = 0; i < zalutani.size(); i++) {
             System.out.println(zalutani.get(i) + " " + pozicii.get(i));
         }
