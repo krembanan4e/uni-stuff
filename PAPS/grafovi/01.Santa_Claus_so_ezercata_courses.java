@@ -3,7 +3,7 @@ package grafovi.listaNetezinskiNasocen;
 import java.util.*;
 
 public class Courses_SantaClaus {
-    public static int bfs(AdjacencyListGraph<Integer> graph, int startVertex, int counter) {
+    public static int bfs(AdjacencyListGraph<Integer> graph, int startVertex, int counter) { //BFS od klasata sho e
         Set<Integer> visited = new HashSet<>();
         Queue<Integer> queue = new LinkedList<>();
 
