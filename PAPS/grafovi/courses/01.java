@@ -236,12 +236,12 @@ class AdjacencyListGraph<T> {
 }
 
 public class Main {
-    private static void visitConnectedCities(AdjacencyListGraph<String> graph, String obj, Set<String> visited) {
+    private static void visitConnectedObjects(AdjacencyListGraph<String> graph, String obj, Set<String> visited) {
         visited.add(obj);
 
         for (String neihbor : graph.getNeighbors(obj)){
             if (!visited.contains(neihbor)) {
-                visitConnectedCities(graph, neihbor, visited);
+                visitConnectedObjects(graph, neihbor, visited);
             }
         }
     }
@@ -268,7 +268,7 @@ public class Main {
 
         for (String obj : graph.getAdjacencyList().keySet()) {
             if (!visited.contains(obj)) {
-                visitConnectedCities(graph, obj, visited);
+                visitConnectedObjects(graph, obj, visited);
                 numOfCities++;
             }
         }
