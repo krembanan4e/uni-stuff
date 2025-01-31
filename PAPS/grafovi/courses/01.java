@@ -58,6 +58,7 @@ public class Courses01 {
         int numOfCities = 0;
 
         // dodaj getAdjacencyList() vo klasata AdjacencyListGraph
+        // vo graph.getAdjacencyList().keySet() se site vertices
 
         for (String object : graph.getAdjacencyList().keySet()){
             if (!visited.contains(object)){
