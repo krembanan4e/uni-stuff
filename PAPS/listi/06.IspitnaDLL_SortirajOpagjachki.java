@@ -20,41 +20,37 @@ Result
 1<->1<->2<->3<->4<->5<->6<->7<->8<->9<->
  */
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Listi_IspitnaDLL {
-    private static void podredi_opagjacki(DLL<Integer> result, DLL<Integer> list2) {
+public class Listi_DLL_opagjachki {
+    private static void opagjachki(DLL<Integer> list1, DLL<Integer> result) {
+        DLLNode<Integer> curr = result.getFirst();
 
-        DLLNode<Integer> curr = list2.getFirst();
-        for (int i=0; i<list2.getSize(); i++){
-            result.insertLast(curr.element);
-            curr = curr.succ;
-        }
+        while(curr != null){
+            DLLNode<Integer> tmp = list1.getLast();
 
-        int size = result.getSize();
-        for (int i=0; i<result.getSize(); i++){
-            DLLNode<Integer> max = result.getFirst();
-            curr = result.getFirst();
-            for (int j=0; j<size; j++){
-                if (curr.element >= max.element){
-                    max = curr;
-                }
+            if (tmp == null){
+                break;
+            }
+            
+            if (tmp.element >= curr.element){
+                result.insertBefore(tmp.element, curr);
+                list1.delete(tmp);
+            }
+            else{
                 curr = curr.succ;
             }
-            result.insertLast(max.element);
-            result.delete(max);
-            size--;
         }
 
         curr = result.getFirst();
-        while(curr != null){
+        while (curr != null){
             System.out.print(curr.element + "<->");
             curr = curr.succ;
         }
         System.out.println();
-      
+
         curr = result.getLast();
-        while(curr != null){
+        while (curr != null){
             System.out.print(curr.element + "<->");
             curr = curr.pred;
         }
@@ -68,13 +64,13 @@ public class Listi_IspitnaDLL {
         DLL<Integer> list1 = new DLL<>();
         DLL<Integer> list2 = new DLL<>();
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             list1.insertLast(sc.nextInt());
         }
-        for(int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i++) {
             list2.insertLast(sc.nextInt());
         }
 
-        podredi_opagjacki(list1, list2);
+        opagjachki(list1, list2);
     }
 }
