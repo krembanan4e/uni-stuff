@@ -15,7 +15,7 @@
 - [Hash](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/hash) 
 - [Trees](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/drva)
 - [Graphs](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/grafovi) 
-- [Greedy, Brute force etc.](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/tehnikiNaKreiranjeAlgoritmi) 
+- [Greedy, Knapsack, Brute force etc.](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/PAPS/tehnikiNaKreiranjeAlgoritmi) 
 ---
 ### IPKS
 - [Tasks](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/IPKS/zadaci) 
