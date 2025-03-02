@@ -1,5 +1,5 @@
 ### SP
-##### > [Labs](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/labs) 
+- [Labs](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/labs) 
 ##### > [Auds](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/auditoriski) 
 ##### > [Midterm](https://github.com/krembanan4e/Materijali-za-na-fakultet/tree/main/SP/za%20vezhbanje) 
 ---
