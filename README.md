@@ -2,8 +2,8 @@
 
 ### $\textcolor{lightpink}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ 😊}$
 $\textcolor{lightpink}{Vo\ tabelive\ imash\ pobrz\ pristap\}$
-$\textcolor{lightpink}{do\ pobitnite\ stvari\ za\ del\ od\ predmetite}
-$\textcolor{lightpink}{podredeni\ spored\ godinata\ koga\ mi\ e\ slushan\ predmetot.}
+$\textcolor{lightpink}{do\ pobitnite\ stvari\ za\ del\ od\ predmetite}$
+$\textcolor{lightpink}{podredeni\ spored\ godinata\ koga\ mi\ e\ slushan\ predmetot.}$
 ---
 
 | Internet tehnologii - 24/25 |
