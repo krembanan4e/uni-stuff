@@ -1,8 +1,8 @@
 <div align="center">
 
 | Ako go chitash ova, I wish you good luck! |
-| *Predmetive se sortirani spored semestar i/ili godinata koga mi e slushan toj predmet.* |
 | :---: |
+| *Predmetive se sortirani spored semestar i/ili godinata koga mi e slushan toj predmet.* |
 | **------------------> 4 semestar <------------------** |
 | **Internet tehnologii - 24/25** |
 | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds) |
