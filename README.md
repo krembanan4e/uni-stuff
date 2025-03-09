@@ -1,7 +1,7 @@
 <div align="center">
 
-### $\textcolor{purple}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ :purple_heart:}$
-$\textcolor{purple}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
+### $\textcolor{magenta}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ 😊}$
+$\textcolor{magenta}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
 
 ---
 
@@ -39,7 +39,7 @@ $\textcolor{purple}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ 
 
 ---
 
-| #{Strukturno\ programiranje\ -\ 23/24}$ |
+| ${Strukturno\ programiranje\ -\ 23/24}$ |
 | :------------------------------------------------: |
 | [Labs](https://github.com/mrkskq/uni-stuff/tree/main/SP/labs) |
 | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/SP/auditoriski)  |
