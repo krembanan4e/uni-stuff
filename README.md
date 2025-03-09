@@ -27,7 +27,7 @@
 
 ---
 
-| Objektrno-orientirano programiranje - 23/24 |
+| Objektno-orientirano programiranje - 23/24 |
 | :------------------------------------------------: |
 | [Labs](https://github.com/mrkskq/uni-stuff/tree/main/OOP/labs) |
 | [Midterm](https://github.com/mrkskq/uni-stuff/tree/main/OOP/kolokviumski) |
