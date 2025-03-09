@@ -1,7 +1,7 @@
 <div align="center">
 
-### $\textcolor{magenta}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ 😊}$
-$\textcolor{magenta}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
+### $\textcolor{lightpink}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ 😊}$
+$\textcolor{lightpink}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
 
 ---
 
