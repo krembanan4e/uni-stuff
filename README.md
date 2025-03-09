@@ -1,7 +1,7 @@
 <div align="center">
 
-| Предмет | labs | aud | a | b | c | d | e | f |
-| :---: |
+| Предмет | . | . | . | . | . | . | . | . |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **IT-24/25** | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds) |
 | **IPKS-24/25** | [Tasks](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/zadaci) | [Animations](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/animacii) | [Visualization](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/vizuelizacija) |
 | **PAPS-24/25** | [Labs](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/labs) | [Lists](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/listi) | [Stack](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/stack) | [Queue](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/queue) | [Hash](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/hash) | [Trees](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/drva) | [Graphs](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/grafovi) | [Algorithm design techniques](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/tehnikiNaKreiranjeAlgoritmi) |
