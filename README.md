@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" backgroung-color="purple">
 
 | Internet tehnologii - 24/25 |
 | :------------------------------------------------: |
