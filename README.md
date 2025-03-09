@@ -1,13 +1,13 @@
 <div align="center">
 
-## $\textcolor{magenta}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ :purple_heart:}$
+### $\textcolor{magenta}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ :purple_heart:}$
 $\textcolor{magenta}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
 
 ---
 
 | ${Internet\ tehnologii\ -\ 24/25}$ |
 | :------------------------------------------------: |
-| [Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds) |
+| ${[Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds)}$ |
 
 ---
   
