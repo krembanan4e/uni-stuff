@@ -1,6 +1,6 @@
 <div align="center">
 
-| Предмет | | | | | | | | |
+| Предмет и година | | | | | | | | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **IT-24/25** | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds) | | | | | | | |
 | **IPKS-24/25** | [Tasks](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/zadaci) | [Animations](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/animacii) | [Visualization](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/vizuelizacija) | | | | | |
