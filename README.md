@@ -4,6 +4,7 @@
 | [Labs](https://github.com/mrkskq/uni-stuff/tree/main/SP/labs) |
 | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/SP/auditoriski)  |
 | [Midterm](https://github.com/mrkskq/uni-stuff/tree/main/SP/za%20vezhbanje) | 
+  
 </div>
 
 ---
