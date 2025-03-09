@@ -1,11 +1,11 @@
 <div align="center">
 
-$\textcolor{magenta}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ :purple_heart:}$
-$\textcolor{lightpink}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
+$\textcolor{purple}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ :purple_heart:}$
+$\textcolor{purple}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
 
 ---
 
-| Internet tehnologii - 24/25 |
+| ${Internet\ tehnologii\ -\ 24/25}$ |
 | :------------------------------------------------: |
 | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds) |
 
