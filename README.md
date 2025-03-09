@@ -2,10 +2,10 @@
 
 | Ako go chitash ova, I wish you good luck! |
 | :---: |
-| **---> 4 semestar <---** |
+| **------------------> 4 semestar <------------------** |
 | **Internet tehnologii - 24/25** |
 | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds) |
-| **---> 3 semestar <---** |
+| **------------------> 3 semestar <------------------** |
 | **Internet programiranje na klientska strana - 24/25** |
 | [Tasks](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/zadaci) |
 | [Animations](https://github.com/mrkskq/uni-stuff/tree/main/IPKS/animacii) |
@@ -19,11 +19,11 @@
 | [Trees](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/drva) |
 | [Graphs](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/grafovi) |
 | [Algorithm design techniques](https://github.com/mrkskq/uni-stuff/tree/main/PAPS/tehnikiNaKreiranjeAlgoritmi) |
-| **---> 2 semestar <---** |
+| **------------------> 2 semestar <------------------** |
 | **Objektno-orientirano programiranje - 23/24** |
 | [Labs](https://github.com/mrkskq/uni-stuff/tree/main/OOP/labs) |
 | [Midterm](https://github.com/mrkskq/uni-stuff/tree/main/OOP/kolokviumski) |
-| **---> 1 semestar <---** |
+| **------------------> 1 semestar <------------------** |
 | **Strukturno programiranje - 23/24** |
 | [Labs](https://github.com/mrkskq/uni-stuff/tree/main/SP/labs) |
 | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/SP/auditoriski)  |
