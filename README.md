@@ -1,6 +1,6 @@
 <div align="center">
 
-$\textcolor{purple}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!}$
+$\textcolor{magenta}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!\ :purple_heart:}$
 $\textcolor{lightpink}{Vo\ tabelive\ imash\ pobrz\ pristap\ do\ pobitnite\ stvari\ od\ sekoj\ predmet.}$
 
 ---
