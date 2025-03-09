@@ -1,5 +1,7 @@
 <div align="center">
 
+$\textcolor{purple}{Ako\ go\ chitash\ ova,\ I\ wish\ you\ good\ luck!}$
+
 | Internet tehnologii - 24/25 |
 | :------------------------------------------------: |
 | [Auds](https://github.com/mrkskq/uni-stuff/tree/main/IT/auds) |
