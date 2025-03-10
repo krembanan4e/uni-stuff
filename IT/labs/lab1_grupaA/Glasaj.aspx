@@ -5,7 +5,7 @@
             <div class="col">
                 <asp:Label ID="lblProfesor" runat="server" Text="Проф.">Проф. </asp:Label>
                 <div>
-                    <asp:ListBox ID="lbPredmeti" runat="server">
+                    <asp:ListBox ID="lbPredmeti" runat="server" AutoPostBack="True" OnSelectedIndexChanged="lbPredmeti_SelectedIndexChanged">
                         <asp:ListItem Value="Гоце Арменски">Интернет технологии</asp:ListItem>
                         <asp:ListItem Value="Костадин Мишев">Оперативни системи</asp:ListItem>
                         <asp:ListItem Value="Дејан Ѓорѓевиќ">Софтверско инженерство</asp:ListItem>
