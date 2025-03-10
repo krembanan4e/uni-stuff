@@ -16,10 +16,10 @@ namespace Lab1A
 
         protected void najavaKopce_Click(object sender, EventArgs e)
         {
-			if (lbIme.Text.Length != 0 && lbLozinka.Text.Length != 0 && lbAdresa.Text.Length != 0)
-			{
-				Response.Redirect("Glasaj.aspx");
-			}
+		if (ime.Text.Length != 0 && lozinka.Text.Length != 0 && adresa.Text.Length != 0)
+		{
+			Response.Redirect("Glasaj.aspx");
+		}
         }
     }
 }
