@@ -2,7 +2,7 @@
 
 *Ако го читаш ова, I wish you good luck <3*
 
-| Предмет | Link до предметот | Проект |
+| Предмет | Линкче до предметот | Проект |
 | :---: | :---: | :---: |
 | **IT-24/25** | [![My Skills](https://skillicons.dev/icons?i=cs,dotnet)](https://github.com/mrkskq/uni-stuff/tree/main/IT) | |
 | **IPKS-24/25** | [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://github.com/mrkskq/uni-stuff/tree/main/IPKS) | |
